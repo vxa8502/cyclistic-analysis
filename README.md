@@ -62,8 +62,8 @@ The analysis pulls data directly from Divvy Bikes' public S3 buckets, eliminatin
 
 3. **Run the Analysis**
    ```bash
-   python scripts/clean.py    # Downloads data from S3, cleans and processes it
-   python scripts/analysis.py # Generate analysis
+   python scripts/clean_data.py    # Downloads data from S3, cleans and processes it
+   python scripts/analyze_data.py # Generate analysis
    ```
 
 ## Data Processing Steps
@@ -89,7 +89,6 @@ The analysis pulls data directly from Divvy Bikes' public S3 buckets, eliminatin
 2. Ride Characteristics
    - Duration differences between user types
    - Bike type preferences
-   - Geographic usage patterns
 
 ## Troubleshooting
 Common issues and solutions:
@@ -99,7 +98,7 @@ Common issues and solutions:
 - ZIP extraction errors: Verify S3 files are properly formatted
 
 ## Performance Notes
-- The analysis now streams data directly from S3, reducing local storage requirements
+- The analysis streams data directly from S3, reducing local storage requirements
 - Processing time may vary based on internet connection speed
 - Memory usage is optimized through streaming data processing
 
