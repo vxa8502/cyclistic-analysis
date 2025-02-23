@@ -1,0 +1,16 @@
+# Ignore processed data and output directories
+/data/processed/
+/outputs/
+
+# Ignore Python bytecode files
+__pycache__/
+*.pyc
+
+# Ignore virtual environments
+/venv/
+
+# Ignore Jupyter notebook checkpoints
+.ipynb_checkpoints/
+
+# Ignore visualizations output
+visualizations/*.png
