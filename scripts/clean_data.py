@@ -27,7 +27,7 @@ def download_and_extract(url: str) -> pd.DataFrame:
         
         # Extract the zip file in memory
         with zipfile.ZipFile(io.BytesIO(response.content)) as zip_ref:
-            # Get the CSV file name (assuming one CSV per zip)
+            # Get the CSV file name (one month's CSV per zip)
             csv_file = [f for f in zip_ref.namelist() if f.endswith('.csv')][0]
             
             # Read the CSV directly from the zip file
